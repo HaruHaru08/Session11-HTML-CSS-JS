@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: #ffffff;
+    border: 2px solid #efefec;
+    padding: 20px;
+}
+header{
+    background-color: #a60162;
+    display: flex;
+    margin-bottom: 10px;
+    height: 200px;
+}
+main{
+    display: flex;
+    gap: 10px;
+}
+section{
+    display: flex;
+    gap: 10px;
+}
+main div:nth-of-type(1){
+    background-color: #db317f;
+    width:25%;
+    height:100px;
+}
+main div:nth-of-type(2){
+    background-color: #e762a0;
+    width:25%;
+    height:100px;
+}
+main div:nth-of-type(3){
+    background-color: #8c2655;
+    width:25%;
+    height:100px;
+}
+main div:nth-of-type(4){
+    background-color: #ef99c1;
+    width:25%;
+    height:100px;
+}
+section div:nth-of-type(1){
+    background-color: #de5d9e;
+    width: 50%;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+section div:nth-of-type(2){
+    background-color: #e573b2;
+    width: 50%;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+aside{
+    background-color: #ed7bb8;
+    height: 300px;
+}
+@media screen and (min-width:768px) and (max-width:1200px){
+    main{
+        display:flex;
+       flex-wrap:wrap;
+    }
+    main div:nth-of-type(1){
+        width: calc(50% - 5px);
+        height: 150px;
+    }
+    main div:nth-of-type(2){
+        width: calc(50% - 5px);
+        height: 150px;
+    }
+    main div:nth-of-type(3){
+        width: calc(50% - 5px);
+        height: 150px;
+    }
+    main div:nth-of-type(4){
+        width: calc(50% - 5px);
+        height: 150px;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    section div:nth-of-type(1){
+        width: 100%;
+        height: 200px;
+        margin-bottom: 0;
+    }
+    section div:nth-of-type(2){
+        width: 100%;
+        height: 200px;
+        margin-top: 0;
+    }
+    aside{
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header{
+        height: 150px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    main div:nth-of-type(1){
+        width: 100%;
+        height: 150px;
+    }
+    main div:nth-of-type(2){
+        width: 100%;
+        height: 150px;
+    }
+    main div:nth-of-type(3){
+        width: 100%;
+        height: 150px;
+    }
+    main div:nth-of-type(4){
+        width: 100%;
+        height: 150px;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    section div:nth-of-type(1){
+        width: 100%;
+        height: 150px;
+        margin-bottom: 0;
+    }
+    section div:nth-of-type(2){
+        width: 100%;
+        height: 150px;
+        margin-top: 0;
+    }
+    aside{
+        height: 150px;
+    }
+}
